@@ -1,0 +1,28 @@
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 0 2rem;
+  width: auto;
+}
+.boxholder {
+  width: 50%;
+}
+section.markdown {
+  margin-top: 1rem;
+  gap: 2rem;
+  width: 100%;
+  display: flex;
+}
+
+.markdown .react-mde {
+  width: 100%;
+  border: 1px solid #c8ccd0;
+  border-radius: 2px;
+}
+
+.mde-textarea-wrapper textarea.mde-text {
+  height: 70vh !important;
+}
+.mde-tabs button:nth-child(2) {
+  display: none;
+}
