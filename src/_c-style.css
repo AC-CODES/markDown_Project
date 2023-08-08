@@ -1,8 +1,69 @@
 main {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0 0 2rem;
+  margin: 2rem;
   width: auto;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  -webkit-apperance: none;
+  visibility: hidden;
+  display: none;
+}
+.check {
+  position: relative;
+  display: flex;
+  width: 40px;
+  height: 20px;
+  background: #092c3e;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in 0.5s;
+  border: 1px solid #000;
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  background: #fff;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]:checked ~ .check {
+  background: #fff;
+}
+
+input[type="checkbox"]:checked ~ .check:before {
+  transform: translate(50px);
+}
+
+.check:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #092c3e;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: solid 1px #092c3e;
+  transform: translate(50px);
+}
+input[type="checkbox"]:checked ~ .check:after {
+  transform: translate(0px);
 }
 .boxholder {
   width: 50%;

@@ -5,15 +5,17 @@ import "./_c-style.css";
 import "react-mde/lib/styles/css/react-mde-all.css";
 
 function App() {
-  const [markdown, setMarkdown] = useState(" ## markdown preview");
-
-  // const [selectedTab, setSelectedTab] = React.useState("write");
+  const [markdown, setMarkdown] = useState(" ## Markdown Preview");
 
   return (
     <main>
-      <section className="header">
+      <header>
         <h2>Expresate con estilo</h2>
-      </section>
+        <label>
+          <input type="checkbox" />
+          <span className="check"></span>
+        </label>
+      </header>
       <section className="markdown">
         <div className="boxholder">
           <ReactMde className="input" value={markdown} onChange={setMarkdown} />
