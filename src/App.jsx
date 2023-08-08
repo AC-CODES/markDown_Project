@@ -5,7 +5,7 @@ import "./_c-style.css";
 import "react-mde/lib/styles/css/react-mde-all.css";
 
 function App() {
-  const [markdown, setMarkdown] = useState(" ## Markdown Preview");
+  const [markdown, setMarkdown] = useState(" ## Markdown Preview, #Hey");
 
   return (
     <main>
