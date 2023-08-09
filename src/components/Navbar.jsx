@@ -1,10 +1,11 @@
 import DarkmodeSwitcher from "./DarkmodeSwitcher";
 
-const Navbar = () => {
+const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
     <header>
       <h2>Expresate con estilo</h2>
-      <DarkmodeSwitcher />
+
+      <DarkmodeSwitcher darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     </header>
   );
 };

@@ -1,11 +1,8 @@
-const DarkmodeSwitcher = () => {
+const DarkmodeSwitcher = ({ toggleDarkMode }) => {
   return (
     <label>
-      <input type="checkbox" />
-      <span className="check">
-        <span>a</span>
-        <span>a</span>
-      </span>
+      <input type="checkbox" onClick={toggleDarkMode} />
+      <span className="check"></span>
     </label>
   );
 };
